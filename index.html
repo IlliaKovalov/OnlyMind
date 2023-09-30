@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blurred Gradient Background</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(45deg, #eed5ff, #ba9af7);
+            overflow: hidden;
+        }
+
+        .blur {
+            width: 100%;
+            height: 100%;
+            background: inherit;
+            position: absolute;
+            filter: blur(10px);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="blur"></div>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.457/build/spline-viewer.js"></script>
+    <spline-viewer loading-anim url="https://prod.spline.design/opCqdWxpGWPVUEmy/scene.splinecode"></spline-viewer>
+</body>
+</html>
